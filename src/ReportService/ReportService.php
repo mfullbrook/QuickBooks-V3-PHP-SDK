@@ -1240,7 +1240,7 @@ class ReportService
             return null;
         } else {
             $this->lastError = false;
-            $parsedResponseBody = $this->getResponseSerializer()->Deserialize($responseBody, true);
+            $parsedResponseBody = $this->getResponseSerializer()->Deserialize($responseBody, false);
             return ($parsedResponseBody);
         }
     }

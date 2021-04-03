@@ -104,7 +104,7 @@ class JsonObjectSerializer extends IEntitySerializer
          */
     private static function decorateIntuitEntityToPhpClassName($intuitEntityName)
     {
-        return CoreConstants::PHP_CLASS_PREFIX . $intuitEntityName;
+        return '' . CoreConstants::PHP_CLASS_PREFIX . $intuitEntityName;
     }
 
         /**
@@ -184,7 +184,7 @@ class JsonObjectSerializer extends IEntitySerializer
     /**
      * This method is meant to be used as an array_filter callback to remove array elements that
      * "have no content".
-     * 
+     *
      * @return bool Returns true if the input value is NOT NULL and is NOT an empty string
      *              Returns false if the input IS NULL or IS AN EMPTY STRING
      */
